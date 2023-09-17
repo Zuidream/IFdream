@@ -1,1 +1,1 @@
-# Is fake Godot Language change.
+# Is fuck Godot Language change.
