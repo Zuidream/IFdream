@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgq5fi7tqu1n5"]
+
+[ext_resource type="Texture2D" uid="uid://yjveqmhiwlmm" path="res://assets/alts/IFdream.png" id="1_8jacq"]
+[ext_resource type="Script" path="res://assets/scripts/MainScene.cs" id="1_6711h"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6711h")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.501961, 0.686275, 1, 0.176471)
+
+[node name="BoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="TextureRect" type="TextureRect" parent="BoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+texture = ExtResource("1_8jacq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+
+[node name="BnPlay" type="Button" parent="BoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="BnOption" type="Button" parent="BoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+
+[node name="BnHelp" type="Button" parent="BoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+
+[node name="BnExit" type="Button" parent="BoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "@Studio:IFdraem
+@QQ group:638946835"
